@@ -1,4 +1,4 @@
-## My personal website. Based on the Spectral theme from HTML5Up (below).
+## My personal website. Based on the Spectral theme from HTML5Up.
 
 Spectral by HTML5 UP
 html5up.net | @ajlkn
