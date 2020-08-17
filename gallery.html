@@ -151,26 +151,7 @@ body {
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Diego Alba Burbano</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="aboutme.html">About</a></li>
-											<li><a href="research.html">Research</a></li>
-											<li><a href="outreach.html">Outreach</a></li>
-											<li><a href="resources.html">Resources</a></li>
-											<li><a href="leisure.html">Leisure</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+					{% include header.html %}
 
 				<!-- Main -->
 					<article id="main">
@@ -186,10 +167,10 @@ body {
   <div class="column">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Tivoli Gardens" src="images/photos/1.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Canton" src="images/photos/5.jpg" style="width:100%">
-    <img id="myImg" onClick="reply_clicked(this)" alt = "Migrant Mother, Dorothea Lange"  src="images/photos/9.jpg" style="width:100%">
+    <img id="myImg" onClick="reply_clicked(this)" alt = "Migrant Mother, Dorothea Lange - LC"  src="images/photos/9.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Pacific Beach"  src="images/photos/21.JPG" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Praia de Aguas Santas"  src="images/photos/101.jpg" style="width:100%">
-    <img id="myImg" onClick="reply_clicked(this)" alt = "Law Street Beach"  src="images/photos/6.jpg" style="width:100%">
+    <img id="myImg" onClick="reply_clicked(this)" alt = "Law Street Beach"  src="images/photos/6.jpg" style="width:100%">	
     <img id="myImg" onClick="reply_clicked(this)" alt = "Coronado"  src="images/photos/29.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Sanjurjo Badía"  src="images/photos/33.jpg" style="width:100%">
   </div>
@@ -213,11 +194,11 @@ body {
     <img id="myImg" onClick="reply_clicked(this)" alt = "Helicopter bucket"  src="images/photos/32.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img id="myImg" onClick="reply_clicked(this)" alt = "Four Seasons, Marc Chagall"  src="images/photos/4.jpg" style="width:100%">
+    <img id="myImg" onClick="reply_clicked(this)" alt = "Four Seasons, Marc Chagall - LC"  src="images/photos/4.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "US Attorney's Office"  src="images/photos/16.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Ostend Street"  src="images/photos/12.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Praia de Patos"  src="images/photos/19.jpg" style="width:100%">
-    <img id="myImg" onClick="reply_clicked(this)" alt = "Monroe Harbor"  src="images/photos/24.jpeg" style="width:100%">
+    <img id="myImg" onClick="reply_clicked(this)" alt = "Monroe Harbor - LC"  src="images/photos/24.jpeg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Peabody"  src="images/photos/25.jpg" style="width:100%">
     <img id="myImg" onClick="reply_clicked(this)" alt = "Pont de les Peixateries Velles"  src="images/photos/30.jpg" style="width:100%">
   </div>
@@ -226,20 +207,7 @@ body {
 					</article>
 
 				<!-- Footer -->
-				<footer id="footer">
-						<ul class="buttons">
-								<li><a href="#top" class="button fit scrolly">Back to top</a></li>
-						</ul>
-						<ul class="icons">
-								<li><a href="https://twitter.com/dalbabur" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/dalbabur" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/dalbabur" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:dalba@uw.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-					<ul class="copyright">
-						<li>&copy; Diego Alba Burbano</li><li>Design based on: <a href="http://html5up.net">Spectral</a></li>
-					</ul>
-				</footer>
+				{% include footer.html %}
 
 			</div>
 
@@ -276,13 +244,7 @@ function reply_clicked(clicked_img){
 
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			{% include scripts.html %}
 
 	</body>
 </html>
