@@ -161,9 +161,20 @@ input, select, textarea {
 	p {
 		margin: 0em 0em 2em 0em;
 	}
-	p.quote {
-		margin: 0em 10em 2em 10em;
-	}
+		@media screen and (max-width: 1920px) {
+
+			p.quote{
+				margin: 0em 10em 2em 10em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			p.quote {
+				margin: 0em 3em 2em 3em;
+			}
+		}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
